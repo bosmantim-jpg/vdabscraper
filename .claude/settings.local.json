@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.vdab.be)",
+      "WebSearch",
+      "WebFetch(domain:developer.vdab.be)",
+      "Bash(pip install *)",
+      "Bash(playwright install *)",
+      "Bash(python *)",
+      "Bash(Get-Process python *)",
+      "Bash(Select-Object Name, Id, Handles)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(Stop-Process *)",
+      "Bash(awk '{print $NF}')",
+      "Bash(xargs -I {} sh -c 'echo \"=== {} ===\" && head -25 \"jobs/{}\"')",
+      "Bash(rm -rf jobs/*)",
+      "Bash(pkill -f \"python scraper.py\")",
+      "Bash(tee -a scraper_run.log)",
+      "Bash(tee -a scraper_run2.log)",
+      "Bash(xargs -I {} sh -c 'echo \"=== {} ===\" && head -80 {}')",
+      "Bash(echo \"Scraper started in background \\(PID: $!\\)\")",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ]
+  }
+}
