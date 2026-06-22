@@ -11,6 +11,7 @@ A Python web scraper for VDAB (Flemish employment service) job listings with a f
 - **Structured data extraction**: Pulls job title, company, location, salary, language requirements, and job description
 - **Rate limiting**: Respects server load with random delays between requests
 - **Markdown output**: Saves each job posting as a markdown file ready for AI processing
+- **Excel export**: Export all scraped jobs to formatted Excel spreadsheet with filtering and sorting capabilities
 
 ## Setup
 
@@ -38,6 +39,19 @@ python scraper.py
 ```
 
 The script automatically skips job IDs that have already been processed.
+
+### Exporting to Excel
+```bash
+# Export all currently scraped jobs to Excel
+python export_to_excel.py
+```
+
+This creates a timestamped Excel file (`vdab_jobs_YYYYMMDD_HHMMSS.xlsx`) containing:
+- Job title, company, location
+- Contract type and salary
+- Language requirements with proficiency levels
+- Job descriptions (first 500 characters)
+- Formatted headers with frozen panes for easy navigation
 
 ## Output
 
