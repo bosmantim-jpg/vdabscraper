@@ -2,6 +2,8 @@
 
 A Python web scraper for VDAB (Flemish employment service) job listings with a focus on credit-related positions.
 
+**GitHub Repository:** https://github.com/bosmantim-jpg/vdabscraper
+
 ## Features
 
 - **Pagination**: Automatically traverses all pages of search results
